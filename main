@@ -1,1 +1,311 @@
-e2e2e
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local _0X = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Esp = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local AltDelete = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Exit = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Discord = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_0X.Name = "0X"
+_0X.Parent = ScreenGui
+_0X.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+_0X.Position = UDim2.new(0.381747484, 0, 0.207200453, 0)
+_0X.Size = UDim2.new(0, 738, 0, 413)
+
+UICorner.Parent = _0X
+
+TextLabel.Name = "Название"
+TextLabel.Parent = _0X
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.364004225, 0, -0.000564973801, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Cheat 0x"
+TextLabel.TextColor3 = Color3.fromRGB(0, 140, 124)
+TextLabel.TextSize = 56.000
+
+Fly.Name = "Fly"
+Fly.Parent = _0X
+Fly.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Fly.Position = UDim2.new(0.0663956702, 0, 0.241463438, 0)
+Fly.Size = UDim2.new(0, 20, 0, 20)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = ""
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 14.000
+
+TextLabel_2.Parent = Fly
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(3.33888888, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 47, 0, 19)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "FLY Press F"
+TextLabel_2.TextColor3 = Color3.fromRGB(195, 195, 195)
+TextLabel_2.TextSize = 25.000
+
+UICorner_2.Parent = Fly
+
+TextLabel_3.Name = "Владелец"
+TextLabel_3.Parent = _0X
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.364498675, 0, 0.907317102, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "By dwrgwdeaq"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 15.000
+
+Esp.Name = "Esp"
+Esp.Parent = _0X
+Esp.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Esp.Position = UDim2.new(0.0663956702, 0, 0.327992678, 0)
+Esp.Size = UDim2.new(0, 20, 0, 20)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = ""
+Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Esp.TextSize = 14.000
+
+TextLabel_4.Parent = Esp
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(2.89444423, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 63, 0, 19)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Esp Players"
+TextLabel_4.TextColor3 = Color3.fromRGB(195, 195, 195)
+TextLabel_4.TextSize = 25.000
+
+UICorner_3.Parent = Esp
+
+AltDelete.Name = "AltDelete"
+AltDelete.Parent = _0X
+AltDelete.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+AltDelete.Position = UDim2.new(0.0677100271, 0, 0.153665841, 0)
+AltDelete.Size = UDim2.new(0, 20, 0, 20)
+AltDelete.Font = Enum.Font.SourceSans
+AltDelete.Text = ""
+AltDelete.TextColor3 = Color3.fromRGB(0, 0, 0)
+AltDelete.TextSize = 14.000
+
+TextLabel_5.Parent = AltDelete
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(3.82777762, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 63, 0, 19)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Delete LEFT ALT"
+TextLabel_5.TextColor3 = Color3.fromRGB(195, 195, 195)
+TextLabel_5.TextSize = 25.000
+
+UICorner_4.Parent = AltDelete
+
+Exit.Name = "Exit"
+Exit.Parent = _0X
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.Position = UDim2.new(0.955284655, 0, 0.0145278452, 0)
+Exit.Size = UDim2.new(0, 26, 0, 26)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = ""
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
+
+UICorner_5.Parent = Exit
+
+Discord.Name = "Discord"
+Discord.Parent = _0X
+Discord.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Discord.Position = UDim2.new(0.00406503491, 0, 0.905569077, 0)
+Discord.Size = UDim2.new(0, 112, 0, 37)
+Discord.Font = Enum.Font.SourceSansBold
+Discord.Text = "Discord"
+Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
+Discord.TextSize = 27.000
+
+UICorner_6.Parent = Discord
+
+Frame.Parent = _0X
+Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Frame.Position = UDim2.new(0.00135509623, 0, 0.118644066, 0)
+Frame.Size = UDim2.new(0, 736, 0, 2)
+
+-- Scripts:
+
+-- ScreenGui.DeleteAlt is disabled.
+-- ScreenGui.Fly is disabled.
+local function HUOHVD_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	local Button = script.Parent -- Получаем кнопку
+	
+	local isActivated = false -- Устанавливаем начальное значение флага, отвечающего за то, активен ли скрипт
+	
+	local function activateScript() -- Функция для активации скрипта
+		isActivated = true -- Устанавливаем значение флага в "true"
+		Button.BackgroundColor3 = Color3.new(0, 1, 0) -- Меняем цвет кнопки на зеленый
+		-- Вставьте свой код, который нужно выполнить тут
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.Fly.Enabled = true
+	end
+	
+	local function deactivateScript() -- Функция для деактивации скрипта
+		isActivated = false -- Устанавливаем значение флага в "false"
+		Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Меняем цвет кнопки на красный
+		-- Вставьте свой код, который нужно выполнить тут
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Fly.Enabled = false
+	end
+	
+	Button.Activated:Connect(function()
+		if isActivated then
+			deactivateScript() -- Если скрипт уже активирован, то его нужно деактивировать
+		else
+			activateScript() -- Если скрипт не активирован, то его нужно активировать
+		end
+	end)
+end
+coroutine.wrap(HUOHVD_fake_script)()
+local function RYJPOGA_fake_script() -- _0X.Передвижение 
+	local script = Instance.new('LocalScript', _0X)
+
+	ui = script.Parent
+	ui.Draggable = true
+	ui.Active = true
+	ui.Selectable = true
+end
+coroutine.wrap(RYJPOGA_fake_script)()
+local function BOSD_fake_script() -- Esp.LocalScript 
+	local script = Instance.new('LocalScript', Esp)
+
+	local Button = script.Parent -- Получаем кнопку
+	
+	local isActivated = false -- Устанавливаем начальное значение флага, отвечающего за то, активен ли скрипт
+	
+	local function activateScript() -- Функция для активации скрипта
+		isActivated = true -- Устанавливаем значение флага в "true"
+		Button.BackgroundColor3 = Color3.new(0, 1, 0) -- Меняем цвет кнопки на зеленый
+		-- Вставьте свой код, который нужно выполнить тут
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.DeleteAlt.Enabled = true
+	end
+	
+	local function deactivateScript() -- Функция для деактивации скрипта
+		isActivated = false -- Устанавливаем значение флага в "false"
+		Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Меняем цвет кнопки на красный
+		-- Вставьте свой код, который нужно выполнить тут
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.DeleteAlt.Enabled = false
+	end
+	
+	Button.Activated:Connect(function()
+		if isActivated then
+			deactivateScript() -- Если скрипт уже активирован, то его нужно деактивировать
+		else
+			activateScript() -- Если скрипт не активирован, то его нужно активировать
+		end
+	end)
+end
+coroutine.wrap(BOSD_fake_script)()
+local function XZAZSY_fake_script() -- AltDelete.LocalScript 
+	local script = Instance.new('LocalScript', AltDelete)
+
+	local Button = script.Parent -- Получаем кнопку
+	
+	local isActivated = false -- Устанавливаем начальное значение флага, отвечающего за то, активен ли скрипт
+	
+	local function activateScript() -- Функция для активации скрипта
+		isActivated = true -- Устанавливаем значение флага в "true"
+		Button.BackgroundColor3 = Color3.new(0, 1, 0) -- Меняем цвет кнопки на зеленый
+		-- Вставьте свой код, который нужно выполнить тут
+	game.Players.LocalPlayer.PlayerGui.ScreenGui.DeleteAlt.Enabled = true
+	end
+	
+	local function deactivateScript() -- Функция для деактивации скрипта
+		isActivated = false -- Устанавливаем значение флага в "false"
+		Button.BackgroundColor3 = Color3.new(1, 0, 0) -- Меняем цвет кнопки на красный
+		-- Вставьте свой код, который нужно выполнить тут
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.DeleteAlt.Enabled = false
+	end
+	
+	Button.Activated:Connect(function()
+		if isActivated then
+			deactivateScript() -- Если скрипт уже активирован, то его нужно деактивировать
+		else
+			activateScript() -- Если скрипт не активирован, то его нужно активировать
+		end
+	end)
+end
+coroutine.wrap(XZAZSY_fake_script)()
+local function VBFG_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local scrn = game.Players.LocalPlayer.PlayerGui.ScreenGui
+	    scrn:WaitForChild("0X").Visible = false
+	end)
+	
+	
+end
+coroutine.wrap(VBFG_fake_script)()
+local function PNGHNDK_fake_script() -- Discord.LocalScript 
+	local script = Instance.new('LocalScript', Discord)
+
+	local HttpService = game:GetService("HttpService")
+	
+	-- Замените YOUR_DISCORD_SERVER_INVITE_LINK на актуальную ссылку приглашения вашего Discord сервера
+	local DISCORD_SERVER_INVITE_LINK = "https://discord.gg/umbHtSdZ"
+	
+	-- Обработчик для кнопки
+	local function onButtonClicked()
+		-- Строим URL-запрос для открытия ссылки в браузере пользователя
+		local url = "https://discord.gg/" .. HttpService:UrlEncode(DISCORD_SERVER_INVITE_LINK)
+		game:GetService("MarketplaceService"):PromptPurchaseRobuxStandalone(url, false)
+	end
+	
+	-- Связываем кнопку и обработчик
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	
+	
+end
+coroutine.wrap(PNGHNDK_fake_script)()
+local function GHGOY_fake_script() -- Discord.Script 
+	local script = Instance.new('Script', Discord)
+
+	local HttpService = game:GetService("HttpService")
+	
+	-- Замените YOUR_DISCORD_SERVER_INVITE_LINK на актуальную ссылку приглашения вашего Discord сервера
+	local DISCORD_SERVER_INVITE_LINK = "https://discord.gg/umbHtSdZ"
+	
+	-- Обработчик для кнопки
+	local function onButtonClicked()
+		-- Строим URL-запрос для открытия ссылки в браузере пользователя
+		local url = "https://discord.gg/" .. HttpService:UrlEncode(DISCORD_SERVER_INVITE_LINK)
+		game:GetService("MarketplaceService"):PromptPurchaseRobuxStandalone(url, false)
+	end
+	
+	-- Связываем кнопку и обработчик
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(GHGOY_fake_script)()
+-- ScreenGui.Esp is disabled.
