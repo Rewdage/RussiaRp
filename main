@@ -23,6 +23,92 @@ Mouse.Button1Down:connect(function()
 end)
 
 end)
+local Tab = Window:NewTab("Visual")
+
+local Section = Tab:NewSection("Visual")
+
+local toggle = Section:NewToggle("ESP", "Enable or disable the ESP effect", function(state)
+if state then --если флаг состояния тоггла включен
+for _, player in ipairs(game:GetService("Players"):GetPlayers()) do
+local esp = Instance.new("Highlight")
+esp.Name = player.DisplayName
+esp.FillTransparency = 0
+esp.FillColor = Color3.new(1, 0.666667, 0)
+esp.OutlineColor = Color3.new(1, 0.333333, 1)
+esp.OutlineTransparency = 0
+esp.Parent = player.Character
+end
+else --если флаг состояния тоггла выключен
+for _, player in ipairs(game:GetService("Players"):GetPlayers()) do
+local esp = player.Character:FindFirstChild(player.DisplayName)
+if esp then
+esp:Destroy()
+end
+end
+end
+end)
+
 local Tab = Window:NewTab("AutoRob")
 
 local Section = Tab:NewSection("AutoRob")
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+if state then
+local inputService = game:GetService("UserInputService")
+
+-- Изменяемые переменные
+local clicked = false
+local toggleState = false
+
+-- Создаем функцию для обработки события клика кнопки
+local function onToggleStateChange(state)
+    toggleState = state
+    if toggleState then 
+        click()
+    else
+        unclick()
+    end
+end
+
+-- Создаем функцию для авто-кликера
+local function click()
+    clicked = true
+    while clicked and toggleState do
+        inputService.MouseButton1Down:Wait()
+        inputService.MouseButton1Up:Wait()
+    end
+end
+
+-- Создаем функцию для остановки авто-кликера
+local function unclick()
+    clicked = false
+end
+
+-- Привязываем функцию click() к кнопке мыши
+inputService.InputBegan:Connect(function(input, gameProcessedEvent)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        if clicked and toggleState then
+            return
+        end
+        if not gameProcessedEvent then
+            click()
+        end
+    end
+end)
+
+-- Привязываем функцию unclick() к отпусканию кнопки мыши
+inputService.InputEnded:Connect(function(input, gameProcessedEvent)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        unclick()
+    end
+end)
+
+-- Создаем новый тогл
+local section = script.Parent
+local toggle = section:FindFirstChild("ToggleText")
+
+-- Привязываем функцию onToggleStateChange() к тоглу
+toggle.MouseButton1Click:Connect(function()
+    onToggleStateChange(not toggleState)
+end)
+end
+end)
